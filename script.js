@@ -1,6 +1,7 @@
  const inputs = document.querySelectorAll(".code");
 
             inputs.forEach((input, index) => {
+				input.id = `code-${index + 1}`;
                 input.addEventListener("input", (e) => {
                     if (e.target.value.length === 1) {
                         if (index < inputs.length - 1) {
